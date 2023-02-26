@@ -1,12 +1,16 @@
 package dao;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import com.masai.bean.Buyer;
-import com.masai.bean.Seller;
-import com.masai.utility.DButility;
-public interface Admindaoimpl {
+
+import bean.Buyer;
+import bean.Seller;
+import utility.DButility;
+
+public class AdminDAOImpl implements AdminDAO
+{
 	@Override
 	public Buyer getBuyer() 
 	{
@@ -55,8 +59,6 @@ public interface Admindaoimpl {
 				String password = rs.getString("S_password");
 
 				s = new Seller(id, name, email, password);
-				
-//				System.out.println("=============================");	
 			}
 			
 		}

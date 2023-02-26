@@ -1,13 +1,16 @@
 package dao;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.masai.bean.Product;
-import com.masai.bean.Seller;
-import com.masai.utility.DButility;
-public interface Sellerdaoimpl {
+import bean.Product;
+import bean.Seller;
+import utility.DButility;
+
+public class SellerDAOImpl implements SellerDAO
+{
 	@Override
 	public String registerSeller(Seller seller) 
 	{
@@ -38,7 +41,6 @@ public interface Sellerdaoimpl {
 	public String ProductList(Product p) 
 	{
 		String message = "NOT INSERTED..";
-//		logic
 		try (Connection conn = DButility.provideConnection()) 
 		{
 			PreparedStatement ps = conn
@@ -67,7 +69,6 @@ public interface Sellerdaoimpl {
 	public String updateproduct(Product p, String  P_name) 
 	{
 		String message = "NOT UPDATED..";
-//		logic
 		try (Connection conn = DButility.provideConnection())
 		{
 			PreparedStatement ps = conn.prepareStatement("update Product Set P_name = ?,P_price = ?, P_quantity = ?, P_categort = ?  Where P_name = ?;");
@@ -117,7 +118,7 @@ public interface Sellerdaoimpl {
 	public String AddProduct(Product P) 
 	{
 		String message = "NOT INSERTED..";
-//		logic
+
 		try (Connection conn = DButility.provideConnection()) 
 		{
 			PreparedStatement ps = conn

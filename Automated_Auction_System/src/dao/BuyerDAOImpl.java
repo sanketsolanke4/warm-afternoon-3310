@@ -1,13 +1,16 @@
 package dao;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.masai.bean.Buyer;
-import com.masai.bean.Product;
-import com.masai.utility.DButility;
-public interface Buyerdaoimpl {
+import bean.Buyer;
+import bean.Product;
+import utility.DButility;
+
+public class BuyerDAOImpl implements BuyerDAO
+{
 	@Override
 	public String registerBuyer(Buyer buyer) 
 	{
@@ -124,3 +127,4 @@ public interface Buyerdaoimpl {
 		return message;
 	}
 }
+

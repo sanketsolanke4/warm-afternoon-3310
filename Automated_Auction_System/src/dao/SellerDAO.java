@@ -1,8 +1,11 @@
 package dao;
-import com.masai.bean.Product;
-import com.masai.bean.Seller;
-public class Sellerdao {
-public String registerSeller(Seller seller);
+
+import bean.Product;
+import bean.Seller;
+
+public interface SellerDAO 
+{
+	public String registerSeller(Seller seller);
 	
 	public String ProductList(Product p);
 	
@@ -13,4 +16,5 @@ public String registerSeller(Seller seller);
 	public String AddProduct(Product P);
 	
 	public  Product SoldHistory();
+
 }
