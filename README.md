@@ -2,41 +2,67 @@
 
 <h3>Automated Auction System is an Application Software that is used for the buying and selling of products. This software can be used by the auction companies  who arrange the Auction. Various buyers and sellers are registered in the Auction company. Following are the lists of various users of the system and also the role of the users.</h3>
 
-<p><b>Users are</b><br>
-1. Administrator<br>
-2. Buyer<br>
-3.Seller<br>
-<br>
-<b>Role of the users-</b><br>
-<br>
-<b>1. Administrator</b><br>
-A. View the registered buyer list.<br>
-B. View the registered Seller list.<br>
-C. View the daily dispute report.<br>
-D. View the daily selling report.<br>
-E. Solve the dispute report.<br>
-</p>
-
-<p>
-<b>2. Seller</b><br>
-A. Register himself or herself as seller.<br>
-B. Create list of items to sell.<br>
-C. Update Item price, quantity, etc.<br>
-D. Add new Item in the list.<br>
-E. Remove items from the list.<br>
-F. View the sold Item history.<br>
-</p>
-
-<p><b>3. Buyer<br></b><br>
-A. Register himself or herself as Buyer.<br>
-B. Search and view Items by category.<br>
-C. Select and view all the buyers and also their Items category wise.<br>
-D. Selects Items to buy.<br></p>
 
 
-## **ER Diagram**
+<div align=center>
+
+![AuctionKing](https://cdn2.dontpayfull.com/media/logos/size/300x300/auctionking.com..png?v=20220728030452590120)
+</div>
+
+This backend server is a console base individual project. This server can able to manage the auction detail with seller, buyer and administrator related data and its items. This server is our project during the Masai curriculum. This project is completed within 5 days in unit-SB101.
+
+## Entity Relationship Diagram
+![Entity Relationship Diagram](https://user-images.githubusercontent.com/103615858/208626599-b36e7c82-5ed3-4414-b3c7-8adc6eaad3d0.jpg)
+
+## Features
+
+- Administrator roles:-
+  1. View buyer list
+  2. View seller list
+  3. View daily selling report
+  4. View dispute reports
+  
+ - Seller roles:-
+   1. Add items
+   2. Delete items
+   3. Update items
+   4. Selling report
+   5. Items report
+  
+- Buyer roles:-
+  1. Select Items to buy
+  2. See other buyer choices
+  3. buy item  
 
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/107464990/222782038-2e08ddb0-e621-4302-bcd8-73de3a9cbd86.png">
-</p>
+## Installation
+
+- copy this https://github.com/sanketsolanke4/warm-afternoon-3310.git
+- Select path where you want to store the project in your pc
+- open the corresponding file / folder with editor
+- open terminal of your editor
+- use  --> git clone (paste link) <-- 
+- after project cloned to your folder
+- go to "Main.java" inside "app" folder
+- run as java application
+    
+## Tech Stack
+
+* Java
+* JDBC
+* SQL
+* DAO
+
+## Tools
+
+* Spring Tool Suite
+* Mysql (RDBMS)
+
+
+
+## Flowchart
+![Flowchart](https://user-images.githubusercontent.com/103615858/208626781-1f58135c-2163-4bef-a0ae-66c16f59f6fc.jpeg)
+
+
+
+# Application Image
